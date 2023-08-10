@@ -1,0 +1,48 @@
+<!--topics covered in class are overflow properties ,   CSS Padding & CSS Margin-->
+<!--overflow properties-->
+<!--1. scroll
+    2. auto
+    3. overflow-y: auto(for y-axis) &similarly for x-axis-->
+
+
+<html>
+    <head>
+        <title>CSS Overflow</title>
+        <style>
+            .container{
+                border: 1px solid black;
+                width: 600px;
+                height: 600px;
+                overflow-y: scroll;
+            }
+            .block{
+                border: 1px solid black;
+                font-size: 15px;
+                font-weight: bold;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+            }
+            .block1{
+                background-color: green;
+                margin: 10px 20px 30px 40px;
+                padding: 30px;
+             }
+            .block2{
+                background-color: orange;
+                margin-bottom: 20px;
+                padding: 10px 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+        <div class=" block block1">Block 1</div>
+        <div class="block block2">Block 2</div>
+        <div class=" block block1">Block 1</div>
+        <div class="block block2">Block 2</div>
+        <div class=" block block1">Block 1</div>
+        <div class="block block2">Block 2</div>
+        </div>
+    </body>
+</html>

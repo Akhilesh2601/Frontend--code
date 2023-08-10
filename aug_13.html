@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>CONTROL STRUCTURES</title>
+    </head>
+    <body>
+        <h3>Demonstrating all the conrol statements</h3>
+        <script>
+            alert("demonstrating control structures");
+            var name =prompt("enter name of the student");
+            var age = prompt("enter age");
+            var gender =prompt("gender");
+            var m1 =prompt("subject 1 marks");
+            m1 = parseInt(m1);
+            var m2 =prompt("subject 2 marks");
+            m2 = parseInt(m2);
+            var m3 =prompt("subject 3 marks");
+            m3 = parseInt(m3);
+            var tsal = m1 + m2 + m3;
+            tsal = parseInt(tsal);
+            var avg = tsal/3 ;
+            avg = parseFloat(avg);
+            console.log("name=" + name);
+            console.log("age=" + age);
+            console.log("gender=" + gender);
+            console.log("tsal=" + tsal);
+            console.log("avg=" + avg);
+
+            if ( avg >= 40)
+            {
+                if ( gender == "male") {
+                  console.log("Passed");
+                }
+            }
+            else {
+            console.log("Fail");
+            }
+        </script>
+    </body>
+</html>

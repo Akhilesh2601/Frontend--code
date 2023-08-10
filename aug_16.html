@@ -1,0 +1,40 @@
+<!--Demonstrating FOR loop -->
+<!--Finding sum of even numbers 
+    finding sum f odd numbers
+    writing tables
+    finding prime numbers  -->
+
+<html>
+    <head>
+        <title>Demonstrating For Loop</title>
+    </head>
+    <body>
+        <h3>Finding sum of even numbers</h3>
+       <script>
+          /*  result = 0;
+            for(var i = 1 ; i <= 200 ; i ++){
+                if(i % 2 == 0)
+                {
+                    result = result + i;
+                }
+            }
+            console.log(result);
+        sum = 0;
+        for(var a = 176 ; a <=256 ; a ++){
+            if(a % 2 != 0)
+            {
+                sum = sum + a;
+            }
+        }
+        console.log(sum); */
+
+        var tablenum = prompt("table number : ");
+        tablenum = parseInt(tablenum);
+        for(var multiplier = 1 ; multiplier <= 20 ; multiplier ++)
+        {
+             var value = tablenum * multiplier;  
+            console.log(tablenum + ' * ' +  multiplier + ' = ' + value);
+        }
+    </script> 
+    </body>
+</html>

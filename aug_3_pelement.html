@@ -1,0 +1,63 @@
+<!--Pseudoelements syntax is .abc::pelement{}   -->
+<!--pelements are used for partially that is starting letter etc-->
+
+<html>
+    <head>
+        <title>Demonstarting Pseudo elements</title>
+        <style>
+             p::first-letter{
+                background-color: #ff0059;
+                color: yellow; 
+                font-size: 20px;
+                font-weight: bold;
+             }
+             p::first-line{
+                 color: green;
+             }
+             p::selection{
+                color: red;
+                background-color: aquamarine;
+             }
+             p::after{
+                content: "continue reading into our main page..";
+                color: violet;
+             }
+             p::before{
+                content: "Read this before visiting the page.";
+                color: bisque;
+                background-color: rgb(29, 29, 2);
+             }
+             p[type=political]
+             {
+                background-color: purple;
+                color: yellowgreen;
+             }
+        </style>
+    </head>
+    <body>
+        <div>
+          <div>1.RAJ</div>
+          <div>2.TEENA</div>
+          <div>3.krish</div>
+          <div>4.RAM</div>
+          <div>5.sita</div>
+        </div>
+         <a href="https://www.youtube.com/" target="_blank">Click Here</a>
+        <div>
+                <a href="https://www.udemy.com/"> Amazon Website</a>
+         </div>
+         <p>
+            Soha, a day back, decided to take up an intense routine of arm workouts. The actor shared a video on her Instagram profile where she can be seen performing several workouts aimed at strengthening the arm muscles. In one part of the video, Soha can be seen standing in the tree pose and workout out on her arm muscles with dumbbells. In the later part of the video, Soha can be seen sitting in the squat position with her back against the wall and working out with dumbbells. Dressed in a black cropped top and a pair of black gym joggers, the actor can be seen engrossed in her routine. Referring to her athleisure, Soha wrote this caption 
+        </p>
+        <p type="political">
+            Fitness regime often make their way on her Instagram profile in the form of short videos demonstrating her focus and determination. Soha believes in the power of fitness and yoga and is often spotted taking up various workout routines right in her living room. Soha's superpowers include being able to work out anytime and anywhere. 
+        </p>
+       <div>
+            <div>Student Details</div>
+            <span>Details 1</span>
+            <span>Details 2</span>
+            <span>Details 3</span>                
+            <span>Details 4</span>
+        </div>
+    </body>
+</html>

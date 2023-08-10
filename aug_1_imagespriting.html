@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Demonstrating image spriting...</title>
+        <style>
+            h3{
+                text-align: center;
+                border: 2px solid black;
+                padding: 10px;
+
+            }
+            .empDetails{
+                border: 1px solid black;
+                margin: 10px;
+                padding: 15px;
+            }
+            .empImage{
+                border: 1px solid;
+                height: 80px;
+                width: 120px;
+                background-image: url("empImages/spriteimage.png");
+            }
+            .emp1{
+                background-position: 1px 81px;
+            }
+            .emp2{
+                background-position: -1px -2px;
+            }
+            .emp3{
+                background-position: 126px -5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Employee Details
+        </h3>
+        <div class="empDetails">
+           <div> Name: Raj</div> 
+            <div>Age: 20</div>
+            <div>Gender: Male</div>
+            <div>Adress: Hyderabad</div>
+            <div class="empImage emp1"></div>
+        </div>
+
+        <div class="empDetails">
+            <div> Name: Rani</div> 
+             <div>Age: 20</div>
+             <div>Gender: Female</div>
+             <div>Adress: Chennai</div>
+             <div class="empImage emp2"></div>
+         </div>
+
+         <div class="empDetails">
+            <div> Name: Lokesh</div> 
+             <div>Age: 19</div>
+             <div>Gender: Male</div>
+             <div>Adress: Vizag</div>
+             <div class="empImage emp3"></div>
+         </div>
+    </body>
+</html>

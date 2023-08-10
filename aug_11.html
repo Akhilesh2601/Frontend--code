@@ -1,0 +1,44 @@
+<!--EMployee problem-->
+
+<html>
+    <head>
+        <title>Demonstrating Variable Hoisting</title>
+    </head>
+    <body>
+        <h1>Welcome to Java script</h1>
+        <script>
+            var name = "Akhil";
+            var hra = 3000;
+            var basicsalary = 40000;
+            var tsal;
+            var pf = 5000;
+            var gender = "male";
+            var dept = 'CS';
+
+            //relating hra and pf with basicsalary
+            var hra =  ( 25 / 100 ) * basicsalary;
+
+            var pf = ( 14 / 100) * basicsalary ;
+
+            console.log("name: " +name);
+
+            console.log("basicsalary: " + basicsalary);
+
+            console.log("gender: " + gender);
+
+            console.log("dept: " + dept);
+
+
+          //tsal of employee
+
+            tsal = hra + pf + basicsalary;
+            
+            console.log("hra= " + hra);
+
+            console.log("pf= " + pf);
+
+            console.log("total salary of employee is " + tsal);
+
+        </script>
+    </body>
+</html>

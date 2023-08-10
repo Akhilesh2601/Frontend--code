@@ -1,0 +1,49 @@
+<!--CSS Priority-->
+<!--Inline CSS > id based CSS > Class based CSS > Tag based CSS-->
+<!-- If there are same property in the html element and if we want particular CSS should be come then we have to use !important after the css property-->
+<!-- To over right the default property we have to us !important property to get it has on web page  to understand see below example for font-size -->
+
+<html>
+    <head>
+        <title>CSS priority</title>
+        <style>
+            .newsSubtitle{
+                background-color: antiquewhite;
+                color: aquamarine;
+                font-size: 10px !important; 
+            }
+            #newsSubtitle{
+                background-color: red;
+                color: greenyellow;
+                font-size: 20px;
+            }
+            p{
+                background-color: black;
+                color: blueviolet;   
+                font-size: 30px;
+            }
+            
+        </style>
+    </head>
+    <body>
+         <h1> Todays News-26/07/2022</h1>
+         <h3> Item 1:</h3>
+         <p class="newsSubtitle" style="background-color: azure; color: #346272;font-size: 15px;"> "They are a foundation for complex moves, like Olympic lifts. The tall-kneeling shoulder exercises minimise the momentum, or the push one gains during the movement, making it a very strict form. Along with shoulders, it develops triceps, upper back and core strength. The focus on glute engagement will promote stability at the hip. It's critical to not let the ribs flare out as you lift the dumbbells and keep the core engaged," said the expert.</p>
+         <h3> Item 3:</h3>
+         <p>"They are a foundation for complex moves, like Olympic lifts. The tall-kneeling shoulder exercises minimise the momentum, or the push one gains during the movement, making it a very strict form. Along with shoulders, it develops triceps, upper back and core strength. The focus on glute engagement will promote stability at the hip. It's critical to not let the ribs flare out as you lift the dumbbells and keep the core engaged," said the expert.</p>
+         <h3> Item 2:</h3> 
+         <p>"They are a foundation for complex moves, like Olympic lifts. The tall-kneeling shoulder exercises minimise the momentum, or the push one gains during the movement, making it a very strict form. Along with shoulders, it develops triceps, upper back and core strength. The focus on glute engagement will promote stability at the hip. It's critical to not let the ribs flare out as you lift the dumbbells and keep the core engaged," said the expert.</p>   
+        </body>
+</html>
+
+<!-- In the above case for Item 1: paragraph inline CSS is taking more priority -->
+<!-- Item 2 and Item 3 paragraphs p tag is taking more priority -->
+<!-- When there is both class and id based css property then it gives higher priority to id based CSS-->
+<!--When there is class and tag based for same element then it takes hihger priority for class CSS -->
+
+
+<!-- When there is same property for all CSS then the priority order is 
+     1.INLINE CSS
+     2.ID BASED CSS
+     3. CLASS BASED CSSS
+     4. TAG BASED CSS    -->

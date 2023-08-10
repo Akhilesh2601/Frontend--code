@@ -1,0 +1,72 @@
+<!-- .abc:pclass{
+    ...
+    ....
+}  this is pseudo class-->
+
+<!-- .abc::pelement{
+    ...
+    ...
+}  this is partial element-->
+
+<!--Topic -PSEUDO CLASS-->
+
+<!--Default anchor tag syntax is <a href=" " target="_self">content</a> && anchor tag is block level element-->
+
+
+<html>
+    <head>
+        <title>Demonstrating Pseudo elements</title>
+    </head>
+    <style>
+          .parentContainer div:last-child {
+             background-color: yellow;
+             color: aquamarine;
+          }
+          .parentContainer div:first-child {
+            background-color: yellow;
+            color: aquamarine;
+         }
+         .parentContainer div:nth-child(3){
+            background-color: yellow;
+            color: aquamarine;
+         }
+          a:hover{
+            color: pink;
+            font-weight: bold;
+          }
+          a:visited{
+            color: grey;
+          }
+          span:first-of-type{
+            background-color: blue;
+            color: azure;
+          }
+    </style>
+    <body>
+        <div class="parentContainer">
+            <div>1.RAJ</div>
+            <div>2.TEENA</div>
+           <div>3.krish</div>
+           <div>4.RAM</div>
+           <div>5.sita</div>
+        </div>
+        <a href="https://www.youtube.com/" target="_blank">Click Here</a>
+        <div>
+            <a href="https://www.udemy.com/"> Amazon Website</a>
+        </div>
+        <p>
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <span>Item 3</span>
+            <span>Item 4</span>
+            <span>Item 5</span>
+        </p>
+        <div>
+             <div>Student Details</div>
+             <span>Details 1</span>
+             <span>Details 2</span>
+             <span>Details 3</span>
+             <span>Details 4</span>
+        </div>
+    </body>
+</html>

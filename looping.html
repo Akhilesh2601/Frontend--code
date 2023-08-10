@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Practicing FOR and WHILE loop</title>
+    </head>
+    <body>
+        <h3>problem solving on while and for loops</h3>
+        <script>
+               console.log("finding amstrong number");
+               var num = prompt("enter the number : ");
+                num = parseInt(num);
+                var a = num;
+                var rem , sum = 0 ;
+                while ( num > 0) {
+                    rem = rem % 10 ;
+                    sum = sum + (rem ^ 3);
+                    num = num / 10; 
+                }
+                if ( sum == a) {
+                    console.log("Its a Amstrong number")
+                }
+                else 
+                  {
+                    console.log("Not an Amstrong number")
+                  }
+     
+        </script>
+    </body>
+</html>
+
+
